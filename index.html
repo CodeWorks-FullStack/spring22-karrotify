@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Karrotify</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  /* This is for wire framing to see our rows/columns */
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <nav class="navbar primary-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/Logo.jpg" alt="" class="img-fluid">
+          </a>
+          <div class="d-flex align-items-center">
+            <h5 class="text-light"> <a href="#shop">Shop</a> </h5>
+            <i class="mdi mdi-wheel-barrow mdi-spin mdi-48px"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <!-- NOTE karrot bg image here -->
+    <div class="row cover-img align-items-center">
+      <div class="col-md-5 offset-6">
+        <div class="transparent shadow py-4 px-5 d-none d-md-block">
+          <div class="d-flex align-items-center">
+            <i class="mdi mdi-carrot mdi-spin"></i>
+            <h6>Karrot Shop</h6>
+            <i class="mdi mdi-carrot mdi-spin"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste ducimus corrupti rem quia quo officiis hic
+            ipsum ut, sint repudiandae doloribus repellendus excepturi, ullam quae cum eaque error exercitationem quasi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ipsam voluptatem, velit repellat, deleniti
+            eum corrupti quibusdam repudiandae doloremque officia, repellendus accusamus porro. Eius ratione doloribus
+            odit ut eveniet tenetur.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- NOTE small shop row -->
+    <div class="row primary-color align-items-center pb-3" id="shop">
+      <div class="col-12 text-center p-3">
+        <h6 class="text-light m-0">Shop</h6>
+      </div>
+    </div>
+    <!-- NOTE karrot cards here -->
+    <div class="row secondary-bg pt-5">
+      <!-- NOTE position absolute will allow an element to be positioned wherever you want - but will only respect the parent it belongs in if that parent is position relative. Otherwise it will default to the root HTML element -->
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/e5ad/9c07/b9d23a6a67b709f7927cfe02786c28c6?Expires=1649030400&Signature=IGCAATvqU-EiRpP6Yt12u~g~JVIFh6aCdx29TSyz4B0R1AMWmH3HMz~7mSvx6iKfkKYbAk8eWEXXq-hT6cyVhpLDgRpr9sJJTaAMaqY-ogXDZ0c4u6KP6rh7~E54p8xStOyJOl~yrtXVec2VNJOAc22xmOM82zCDpGF-qNTDvqSX5aH8KYkmGYg0Sm5Fvxz8gKUuDqt3LfMcdtyNv0mDV9BQCwXWJRLJEeHbaUtFDbVF6nLrRUVPW8I9S9H-x5A09kwhf-X7HPI8JEZ5Eq1pt~wdHfZLyH-diOMWJhXKqT9NSRExet-lFtW8JhNan2z8DZag20A8yFaPSW7URpCUTA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/f748/f6e9/262506c972a8212e4e7d464c945f2f36?Expires=1649030400&Signature=JqYwA1ncKHeAPCrZBFER133-zP4Byf8Bf4zEOhkmOSlexXIMKFJTsTJ-1rdfpX0DCDRUaiUeH4cVAHUr4drlhajaP3YvaXT5~4HN7uPSOCf~6w~Qqz95I~wh4~8JJfEOTP1toB5ySx2RqHCa~buzTTcwRHpYM9l7EIBgGDmvBBCLNuES5oUyDl1C8MGdEuYaTWA5p9Y9k1r0k~bsaNZnDT2efBGmtuc7yJE11rNPM9gwnXFQ4Jo2~RhewWPBb5wDGjg3z-DxYkFcendBkLc5grvmEIQ~O60-uCK6ynBGU1wYNUJnh-KOU8hBmrF148oTNA~CFToJD8CGcKxZ3tIcBQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/9c7d/2214/bb86a95f06e6c19c25895ccde606aa93?Expires=1649030400&Signature=D0mIekAY1Q5sNipqjrPpfHfEVqVd~f0e1YbShrOPIluNojvIGB-tMQJbgKVhbnmNg1KG~9PeDyJ5UvyMqS4HlXMoBEvbycKbosNFNR9FU09uPHMNJG4LXNxaSSZLAnLgBM77-c7aLJgkg7rl7UOnNpxJMaMh0phSRbPCwaFkBME-nOwLbS2y4Snlyuoye4LGd9sPfJlhSHh9NfpVy-grWXiamPMxgDMBVAuqu9iE6yC949OnRoPf0l4Sg4CkFkzJcdmN9TPgc5uhJ1TxtUtup8BlpSAzL7RMAAW087q~PWZ80b1rpyGgRe5qNeopdmNY6tPFMEOLvRJmJ7TEHMb2vQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/4127/250e/9009dcf1aa25dee1124f3132e0ca7174?Expires=1649030400&Signature=OEULGdue98i0hHHySpQHyZZn8sKllW4zOWQ46xPT01drs39OmiBkb3XqUXb7v1fjsBAR8cGkURIh0X~uB~b2ZhQl9ToBrOrRGeQSSl-RORPQO3RcieF-pTWcczZpVPw1SUxfucD3BFwl8stmkin9Y6a6KTWVBQqKJ8Y6R59pJiM6wkKgxqv4wliluMRCkRaTHWOTwWFuFyg0sn-8vaGurzS~XyGxQZeCKNLJhL9oA9wMH6b-CFpZTVjP~QTrF8uy6u3sNJL-szoHgO59u~qnkFsnLgMXasxlt2DBfbMxeUkqNa5LEY8xHPWnFaP-MNd-iS5pZBfXrCRlp3SfM9-kTw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/e921/5f52/ef7324cbbddb0c353201446e8f048184?Expires=1649030400&Signature=ThAfsWJFdZEOZty4GMTrwiSqO8q9Kdnp1pTqYyWFS7MKVIYVDeYWdTiJ1a1R062BHqGFXCASKvMRHvEfWWbb6ZQJ5Af4sj67-BS-GjL1WMI~stHbQ9rsfaL6hA5FJdTwBFxU~TpgOXLad320fsMrpCdXXYHjO-ZEf9WUzDYUq3A5zw9oWo~ZgexMEjC0PvieQXdgaQHGl-hUUhd2Ps6KsKv9Jfh-6hbjf5xaStf4X0Sf0IK2iT67QD108wHH46mpQNbHlrR~-lTURp4fCOdFdOaiL027ZDS39nwBvNjhywxcIez8cxRx4Lhb0wd30CEQJXFimpDAhforCESMqPPNYw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/a350/d571/6a6190c4bef00f34a460575d9e5baa26?Expires=1649030400&Signature=OV6tJxUhFCrJbCEdlL33YKVqWN5DJuTn26qIN0hHux8wevXHwnz0CqyMOIuM1G2~PtS1n8~05j9ikR8uRW4XJoERzAy8XxU1P2CcOQ1sp1fw1t~eNhmGikrpa-5fABj7UBMZNhi8~51QOkHzbeuiiPMEdeRAUGALJ9JzGJmoOODCZnnm9K4d9SLGiRjxX4Mzm8BPPVx0x4Ud72BkfLhOdU2rdsnimC9~GYP9iR1ZVwLSwu2vTJgJ06s4MwFPDaJxbtHTcmSq2RuAnDVcJxI3CSAG~Ceciy71icu93fb4LlWzdMu2gUvpzhuSBNvOUfqsQip-XvAxqhirLs3lvCCIew__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/3168/7bb6/37a434c79d45201daad7238767468985?Expires=1649030400&Signature=Cf3mgm8F-6juSBDU5RrXt0d4a70kWF8XJrwSwnWekLL5gP6ZZ0yEyHlX4K908ZioRkEUpM6B2DnefDrIfD9-ryx1uAwKDmLO-NVqNhvAf2YJ6~HdzaN-pdyF-z1LAedJ4X3RVVlD4dN3lI2q8kACZEmzZ69dqZWLx0GxMdD6nCo7ggDvrRqze3rGLPFzzpHwVratHVoKaaraZmeRXq6J1KWgBQXOjkbqoPR-IL9DPfxlAmTuzg-JvSJpIzXQBRa9plo0~Jn1L0zJxZ1f7GpsUO1vPiEVdyv4v08B60GnBt9pgzpiZpualE-0s3u-buRK1q0uWj9ZvKPq7Z0ulR5YpA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+      <div class="col-md-3 my-5 d-flex justify-content-center position-relative">
+        <img src="https://www.eatatwades.com/files/coolcarrot-rgb1776294345.jpg" alt="">
+        <button class="btn position-absolute spill"> <b>Buy</b> </button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
